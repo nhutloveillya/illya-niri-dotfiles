@@ -1,5 +1,5 @@
 window-rule {
-        geometry-corner-radius 20 // Set every window radius to 20
+        geometry-corner-radius 18 // Set every window radius to 20
         clip-to-geometry true
         draw-border-with-background false
 
@@ -18,13 +18,13 @@ window-rule {
     window-rule {
         // Áp dụng cho cửa sổ không có tiêu điểm (Inactive)
         match is-active=false
-        opacity 0.75
+        opacity 0.7
 }
 
     window-rule {
         // Áp dụng cho cửa sổ đang hoạt động (Active)
         match is-active=true
-        opacity 0.85
+        opacity 0.86
 }
 
 
@@ -42,7 +42,7 @@ window-rule {
 }
 
     window-rule {
-    match title="btop++"
+    match app-id="kitty btop"
     open-maximized true
 }
   window-rule {
@@ -51,10 +51,7 @@ window-rule {
 
 }
     
-    window-rule {
-    match app-id="vesktop"
-    opacity 1.0
-}
+
  
 
     window-rule {

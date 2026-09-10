@@ -13,6 +13,6 @@ stow noctalia
 stow nvim
 
 ln -s $PWD/xdg-terminals.list ~/.config/xdg-terminal.list
-ln -s $PWD/applications ~/.local/share/applications
-ln -s $PWD/nwg-look ~/.local/share/nwg-look
-ln -s $PWD/icons ~/.local/share/icons
+#ln -s $PWD/applications ~/.local/share/applications
+#ln -s $PWD/nwg-look ~/.local/share/nwg-look
+#ln -s $PWD/icons ~/.local/share/icons

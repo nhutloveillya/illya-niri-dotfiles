@@ -4,7 +4,7 @@ binds {
     Mod+T hotkey-overlay-title="Open Terminal: kitty" { spawn "kitty"; }
     Mod+Space repeat=false hotkey-overlay-title="Open App Launcher: noctalia launcher" { spawn-sh "noctalia msg panel-toggle launcher"; }
     Menu repeat=false hotkey-overlay-title="Open App Launcher: noctalia launcher" { spawn-sh "noctalia msg panel-toggle launcher"; }
-    Mod+B repeat=false hotkey-overlay-title="Open Browser: helium-browser" { spawn-sh "helium-browser"; }
+    Mod+B repeat=false hotkey-overlay-title="Open Browser: thorium" { spawn-sh "thorium-browser-avx2 --enable-features=UseOzonePlatform --ozone-platform=wayland --enable-wayland-ime --wayland-text-input-version=3"; }
     Mod+ALT+L repeat=false hotkey-overlay-title="Lock Screen: noctalia lock" { spawn-sh "noctalia msg session lock"; }
     Alt+F4 repeat=false hotkey-overlay-title="Session Menu: noctalia sessionMenu" { spawn-sh "noctalia msg panel-toggle session"; }
     Mod+S repeat=false hotkey-overlay-title="Open Setting" { spawn-sh "noctalia msg settings-toggle"; }
@@ -12,10 +12,9 @@ binds {
     Mod+E repeat=false hotkey-overlay-title="File Manager: nemo" { spawn "nemo"; }
     Mod+Shift+W repeat=false hotkey-overlay-title="Random Wallpaper" {spawn-sh "noctalia msg wallpaper-random";}
     //Mod+N hotkey-overlay-title="Open Neovim" { spawn "neovim"; }
-    Mod+F2 repeat=false hotkey-overlay-title="Open wallcard" { spawn-sh "noctalia msg panel-toggle launcher /wall"; }
+    Mod+F2 repeat=false hotkey-overlay-title="Open wallcard" { spawn-sh "qs -c wallcard"; }
     Mod+F1 repeat=false hotkey-overlay-title="open clipboard" { spawn-sh "noctalia msg panel-toggle clipboard"; } 
-  
-    // Audio & Brightness
+       // Audio & Brightness
     XF86AudioRaiseVolume { spawn-sh "noctalia msg volume-up"; }
     XF86AudioLowerVolume { spawn-sh "noctalia msg volume-down"; }
     XF86AudioMute { spawn-sh "noctalia msg volume-mute"; }

@@ -1,0 +1,319 @@
+[accessibility]
+ui_scale = 0.95000000670552254
+
+[audio]
+sound_volume = 0.39999999105930328
+
+[bar]
+order = [ "default", "bar2" ]
+
+    [bar.bar2]
+    auto_hide = true
+    center = [ "taskbar" ]
+    enabled = true
+    end = [ "privacy", "temp" ]
+    layer = "overlay"
+    margin_ends = 200
+    padding = 20
+    panel_overlap = 0
+    position = "right"
+    reserve_space = false
+    scale = 0.95000000670552254
+    show_on_workspace_switch = false
+    start = [ "caffeine", "bar", "clipboard", "power_profile", "custom_button_2", "settings" ]
+    thickness = 36
+
+    [bar.default]
+    background_opacity = 0.80999998189508915
+    capsule_thickness = 0.99999998137354851
+    end = [ "cpu", "recorder", "brightness", "volume", "bluetooth", "network", "battery", "date" ]
+    padding = 18
+    panel_overlap = 0
+    radius = 21
+    scale = 0.85000000521540642
+    start = [ "session", "workspaces", "notifications", "tray", "lyrics" ]
+    thickness = 25
+
+[brightness]
+minimum_brightness = 0.19999999552965164
+
+[calendar]
+enabled = true
+
+    [calendar.account.home_nextcloud]
+    type = "google"
+
+[control_center]
+width = 770
+
+    [control_center.calendar]
+    show_week_numbers = true
+
+    [[control_center.shortcuts]]
+    type = "wifi"
+
+    [[control_center.shortcuts]]
+    type = "bluetooth"
+
+    [[control_center.shortcuts]]
+    type = "caffeine"
+
+    [[control_center.shortcuts]]
+    type = "system"
+
+    [[control_center.shortcuts]]
+    type = "power_profile"
+
+[desktop_widgets]
+schema_version = 2
+widget_order = [ "desktop-widget-0000000000000002" ]
+
+    [desktop_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [desktop_widgets.widget.desktop-widget-0000000000000002]
+    box_height = 112.0
+    box_width = 240.0
+    cx = 232.0
+    cy = 96.0
+    output = "eDP-1"
+    rotation = 0.0
+    type = "media_player"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000002.settings]
+        background = true
+        background_opacity = 0.73999999999999999
+        background_radius = 16
+        hide_when_no_media = true
+        layout = "horizontal"
+
+[dock]
+background_opacity = 0.57999998703598976
+cross_axis_padding = 3
+enabled = true
+icon_size = 35
+item_spacing = 3
+launcher_position = "start"
+main_axis_padding = 15
+pinned = [ "kitty", "cachyos-hello", "nemo" ]
+reserve_space = false
+show_dots = true
+show_instance_count = false
+smart_auto_hide = true
+
+[location]
+address = "Ba Chuc, VIetnam"
+
+[lockscreen]
+blur_intensity = 0.35999999195337296
+tint_intensity = 0.47999998927116394
+
+[lockscreen_widgets]
+enabled = true
+schema_version = 2
+widget_order = [ "lockscreen-login-box@eDP-1", "lockscreen-widget-0000000000000001" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
+    box_height = 70.0
+    box_width = 240.0
+    cx = 768.0
+    cy = 733.0
+    output = "eDP-1"
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
+        background_color = "primary"
+        background_opacity = 0.0
+        background_radius = 10.0
+        center_password_text = true
+        input_opacity = 1.0
+        input_radius = 32.0
+        layout = "compact"
+        show_caps_lock = true
+        show_keyboard_layout = false
+        show_login_button = false
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = false
+        show_weather = true
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
+    box_height = 240.0
+    box_width = 368.0
+    cx = 768.0
+    cy = 328.0
+    output = "eDP-1"
+    rotation = 0.0
+    type = "clock"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000001.settings]
+        background = false
+        font_family = "Open Sans"
+        shadow = false
+
+[notification]
+border = false
+layer = "overlay"
+show_actions = false
+
+[plugin_settings."h465855hgg/lyrics"]
+animation = "wave"
+double_line = false
+translation_language = "ja"
+
+[plugin_settings."pozzoo/hassio"]
+entity_manager_open_near_click = true
+entity_manager_position = "auto"
+
+[plugin_settings."shin/lrc"]
+separator = "---"
+
+[plugin_settings."yuuto/calculator"]
+panel_placement = "floating"
+
+[plugins]
+enabled = [ "yuuto/calculator", "h465855hgg/lyrics" ]
+
+[shell]
+avatar_path = "/home/nhut/illya-wallpaper/yachio.png"
+button_borders = false
+card_borders = false
+corner_radius_scale = 1.3000000193715096
+font_family = "Adwaita Sans"
+input_borders = false
+password_style = "random"
+polkit_agent = true
+popup_borders = false
+telemetry_enabled = true
+
+    [shell.launcher.providers.calculator]
+    prefix = ""
+
+    [shell.panel]
+    borders = false
+    clipboard_placement = "attached"
+    clipboard_position = "bottom_center"
+    launcher_position = "bottom_center"
+    open_near_click_clipboard = true
+    open_near_click_control_center = true
+    transparency_mode = "glass"
+
+    [shell.screen_corners]
+    enabled = true
+
+    [shell.session]
+    grid_columns = 1
+    show_shortcuts = false
+
+[theme]
+builtin = "Catppuccin"
+community_palette = "Ayu Red"
+source = "wallpaper"
+wallpaper_scheme = "faithful"
+
+    [theme.templates]
+    builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "kitty", "niri", "qt" ]
+    community_ids = [ "discord", "gimp", "steam", "obs" ]
+
+[wallpaper]
+directory = "/home/nhut/illya-wallpaper"
+edge_smoothness = 0.0
+transition = [ "disc", "wipe" ]
+transition_on_startup = true
+
+    [wallpaper.default]
+    path = "/home/nhut/illya-wallpaper/cornelius-dammrich-2003-mainshot-crop-hd-04.jpg"
+
+    [wallpaper.last]
+    path = "/home/nhut/illya-wallpaper/cornelius-dammrich-2003-mainshot-crop-hd-04.jpg"
+
+    [wallpaper.monitors.eDP-1]
+    path = "/home/nhut/illya-wallpaper/cornelius-dammrich-2003-mainshot-crop-hd-04.jpg"
+
+[widget.audio_visualizer]
+anchor = true
+bands = 20
+capsule_padding = 10
+color_1 = "secondary"
+mirrored = false
+scale = 1.8
+width = 60
+
+[widget.bar]
+type = "yuuto/calculator:bar"
+
+[widget.battery]
+display_mode = "graphic"
+scale = 0.75
+show_label = false
+
+[widget.brightness]
+show_label = false
+
+[widget.clock]
+anchor = true
+scale = 1.25
+
+[widget.cpu]
+show_value = false
+
+[widget.custom_button_2]
+glyph = "wallpaper-selector"
+tooltip = "Wallpaper selector"
+type = "custom_button"
+
+    [widget.custom_button_2.actions]
+    left = "exec qs -c hyprquickpaper"
+
+[widget.launcher]
+capsule_fill = "surface"
+custom_image = "/usr/share/icons/cachyos.svg"
+custom_image_colorize = true
+scale = 0.95000000000000007
+
+[widget.lyrics]
+active_color = "primary"
+hide_when_no_lyrics = true
+inactive_color = "surface_variant"
+show_artist = false
+show_glyph = false
+type = "h465855hgg/lyrics:lyrics"
+
+[widget.media]
+art_size = 20
+hide_when_no_media = true
+max_length = 189
+min_length = 93
+title_scroll = "always"
+
+[widget.network]
+show_label = false
+
+[widget.recorder]
+type = "noctalia/screen_recorder:recorder"
+
+[widget.session]
+color = "primary"
+scale = 1.05
+
+[widget.temp]
+font_weight = 300
+
+[widget.volume]
+scale = 0.95000000000000007
+show_label = false
+
+[widget.workspaces]
+active_pill_size = 1.4500000000000002
+anchor = true
+labels_only_when_occupied = true
+pill_scale = 0.75
+show_labels = false

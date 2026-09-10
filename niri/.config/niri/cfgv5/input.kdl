@@ -15,7 +15,10 @@ input {
         natural-scroll // Enable natural (macOS-style) scrolling
     }
 
-    mouse 
+    mouse {
+        accel-speed 0.8          // Pointer speed from -1.0 to 1.0 (default is 0.0)
+        accel-profile "adaptive"     // Use "flat" to disable acceleration, or "adaptive"
+    } 
 
 
     focus-follows-mouse // Automatically focus windows under the mouse pointer

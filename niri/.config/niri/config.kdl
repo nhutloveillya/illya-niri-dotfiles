@@ -19,3 +19,6 @@ include "./cfgv5/rules.kdl"
 include "./cfgv5/misc.kdl"
 
 
+
+// Tide Island shortcut bindings
+include "/home/nhut/.config/tide-island/niri-shortcuts.kdl"
